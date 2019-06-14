@@ -1,0 +1,24 @@
+package nationwide.realcalculator;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.*;
+public class OperationsEvent implements ActionListener {
+	TextField T1;
+	String opt;
+	int FirstNumber;
+	public OperationsEvent (TextField T) {
+		T1=T;
+	}
+	public void actionPerformed (ActionEvent X) {
+		Button btn=(Button) X.getSource();
+		opt=btn.getLabel();
+		T1.setText("");
+		
+		
+		
+
+		
+	}
+	
+}

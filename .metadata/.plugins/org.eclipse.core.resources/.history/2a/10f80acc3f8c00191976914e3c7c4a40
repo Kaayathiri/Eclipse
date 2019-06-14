@@ -1,0 +1,47 @@
+package nationwide.realcalculator;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.*;
+public class OperationsEvent implements ActionListener {
+	TextField T1;
+	String opt,operation;
+	int FirstNumber,SecondNumber;
+	public OperationsEvent (TextField T) {
+		T1=T;
+	}
+	public void actionPerformed (ActionEvent X) {
+		Button btn=(Button) X.getSource();
+		opt=btn.getLabel();
+		if (opt.contentEquals("C")){
+			T1.setText("");
+		}
+			else {
+			FirstNumber=Integer.parseInt(T1.getText());
+			System.out.println("OPT: " + opt);
+			
+			if (opt.contentEquals("+")){
+				SecondNumber=FirstNumber+Integer.parseInt(T1.getText());
+				
+				}
+			}
+				if (opt.contentEquals("-")) {
+					SecondNumber=FirstNumber - Integer.parseInt(T1.getText());
+					
+				}
+				if (opt.contentEquals("*")) {
+					SecondNumber=FirstNumber * Integer.parseInt(T1.getText());	
+					
+			}
+				if (opt.contentEquals("/")) {
+					SecondNumber=FirstNumber / Integer.parseInt(T1.getText());	
+					
+			}
+	
+		T1.setText("");
+		while (opt.equals("=")){ 
+			T1.setText(Integer.toString(SecondNumber));
+	}
+	
+}
+}

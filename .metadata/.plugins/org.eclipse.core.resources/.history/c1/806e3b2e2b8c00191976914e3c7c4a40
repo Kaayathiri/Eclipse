@@ -1,0 +1,48 @@
+package nationwide.realcalculator;
+
+import java.awt.event.*;
+import java.awt.*;
+public class windows10 {
+
+	public static void main(String[] args) {
+		Frame F=new Frame();
+		Panel P1=new Panel();
+		Panel P2=new Panel();
+		TextField T=new TextField(10);
+		Button B0=new Button("0");
+		Button B1=new Button("1");
+		Button B2=new Button("2");
+		Button B3=new Button("3");
+		Button B4=new Button("4");
+		Button B5=new Button("5");
+		Button B6=new Button("6");
+		Button B7=new Button("7");
+		Button B8=new Button("8");
+		Button B9=new Button("9");
+		Button btn_add =new Button("+");
+		Button btn_sub=new Button("-");
+		Button btn_mult=new Button("*");
+		Button btn_div=new Button("/");
+		Button btn_eq=new Button("=");
+		Button btn_clear=new Button("C");
+		FlowLayout F1=new FlowLayout();
+		GridLayout G=new GridLayout (4,4);
+		P1.setLayout(F1);
+		P2.setLayout(G);
+		
+		
+		
+		
+		P1.add(T);
+
+		
+		
+		
+		
+		
+
+		F.setSize(500,500);
+		F.setVisible(true);
+	}
+
+}

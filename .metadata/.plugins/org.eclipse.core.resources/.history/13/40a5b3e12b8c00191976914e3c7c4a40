@@ -1,0 +1,58 @@
+package nationwide.realcalculator;
+
+import java.awt.Button;
+import java.awt.event.ActionEvent;
+
+public class EventhandlerNo implements ActionListener {
+	
+
+	
+	
+	public void actionPerformed (ActionEvent E1) {
+		 Button btn = (Button) E1.getSource();
+		 String ctrl = btn.getLabel();
+
+		 if (ctrl.equals ("0")) {
+			 int A;
+			 A=0;
+		 }
+		 
+		 if (ctrl.equals ("1")) {
+			 int A;
+			 A=1;
+		 }
+		 if (ctrl.equals ("2")) {
+			 int A;
+			 A=2;
+		 }
+		 if (ctrl.equals ("3")) {
+			 int A;
+			 A=3;
+		 }
+		 if (ctrl.equals ("4")) {
+			 int A;
+			 A=4;
+		 }
+		 if (ctrl.equals ("5")) {
+			 int A;
+			 A=5;
+		 }
+		 if (ctrl.equals ("6")) {
+			 int A;
+			 A=6;
+		 }
+		 if (ctrl.equals ("7")) {
+			 int A;
+			 A=7;
+		 }
+		 if (ctrl.equals ("8")) {
+			 int A;
+			 A=8;
+		 }
+		 if (ctrl.equals ("9")) {
+			 int A;
+			 A=9;
+		 }
+	}
+		 
+}

@@ -1,0 +1,23 @@
+package nationwide.barrenmoor;
+
+import java.util.Scanner;
+
+public class adventure {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input= new Scanner(System.in);
+		System.out.println("Enter your name:");
+        String name=input.nextLine();//It is used to get the input string.
+        System.out.println("Hello "+name +", Welcome to the adventures of Barren Moor!"); 
+        System.out.println("What direction do you want to head: North or South?");
+        String direction=input.nextLine();
+        if (direction.equals(input.nextLine())){
+        	System.out.println("The dial reads: '250m away there is something that can help you'. In which direction do you head, East or West?");
+        	
+        				
+        	}
+        }
+	}
+
+}

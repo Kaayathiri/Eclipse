@@ -1,0 +1,23 @@
+package nationwide.offclass;
+
+public class twice {
+
+
+
+
+public void getSandwich(String msg) {
+	String newmsg="";
+	String word="bread";
+	int i;
+	
+	for (i=0;i<msg.length();i++) {
+		if (msg.substring(i,i+5).equals(word)) {
+			newmsg="";
+		}
+		else {
+			newmsg=newmsg+msg.substring(i,i+1);
+		}
+	}
+	System.out.println(newmsg);	
+	}
+}

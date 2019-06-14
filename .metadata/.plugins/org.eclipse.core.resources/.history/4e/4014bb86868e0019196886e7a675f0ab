@@ -1,0 +1,17 @@
+package nationwide.offclass;
+
+public class twice {
+
+public void doubleChar(String msg) {
+		
+		String newmsg="";
+		int i;
+		for (i=0;i<msg.length();i++) {
+			newmsg=msg.substring(i,i+1)+msg.substring(i,i+1); 
+			}
+			System.out.println(newmsg);
+		}	
+		
+	}
+	
+	

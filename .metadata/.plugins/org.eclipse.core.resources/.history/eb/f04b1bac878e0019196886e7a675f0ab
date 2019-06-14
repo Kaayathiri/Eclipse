@@ -1,0 +1,11 @@
+package nationwide.offclass;
+
+public class offclass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		twice t=new twice();
+		t.doubleChar("hello");
+	}
+
+}

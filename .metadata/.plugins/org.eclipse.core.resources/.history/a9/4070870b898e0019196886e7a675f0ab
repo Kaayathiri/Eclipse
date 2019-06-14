@@ -1,0 +1,58 @@
+package nationwide.offclass;
+
+public class twice {
+
+public void doubleChar(String msg) {
+		
+		String newmsg="";
+		String word="";
+		int i;
+		for (i=0;i<msg.length();i++) {
+			if (msg.substring(i,i+1).equals(msg.substring(i,i+1))){ 
+			word=msg.substring(i,i+1)+msg.substring(i,i+1); 
+			}
+			System.out.println(word);
+		}	
+}
+
+
+String newmessage="";
+public int findword(String bread){
+
+	String word2="";
+		int i=0;
+		while (i<newmessage.length()){
+			if (newmessage.substring(i,i+5).equals("bread")){
+				return 1;
+
+			}
+				
+							
+			else {
+				word2=word2+newmessage.substring(i,i+1);
+			}
+			i++;
+	}
+	return 0;
+	}
+	
+public void getSandwich(String msg){
+	String word="";
+	msg=msg+" ";
+	int i=0;
+	while (i<msg.length()){
+		if (msg.substring(i,i+5).equals("bread")){
+			if (findword(word)==0){
+				newmessage+=(word);
+			}
+			word="";
+}
+		
+		else {
+			word=word+msg.substring(i,i+1);
+		}
+		i++;
+}
+ System.out.println(newmessage);
+}
+}
